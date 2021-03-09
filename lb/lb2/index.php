@@ -4,12 +4,12 @@
     <title></title>
 </head>
 <body>
-    <form action="index.php" method="">
-    <p>Your number : <input type="text" name="number">  </p>
+    <form action="index.php" method="post">
+    <p>Your number : <input type="text" name="text">  </p>
     </form>
     <?php 
-        $numb = (int)$_POST['number'];
-        echo $numb;
+         $numb = (string)$_POST['text'];
+         echo strtoupper ($numb);
     ?>
 </body>
 </html>
