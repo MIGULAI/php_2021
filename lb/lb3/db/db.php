@@ -1,7 +1,7 @@
 <?php
 
 function check_db(){
-    $pdo = new PDO("mysql:host=localhost;dbname=auth_hash;", 'root', NULL);
+    $pdo = new PDO("mysql:host=localhost;dbname=auth_hash;", 'root', 'root');
     $res = $pdo->exec("CREATE TABLE IF NOT EXISTS users (
         id int not NULL AUTO_INCREMENT,
         login varchar(15) not null,
@@ -11,15 +11,18 @@ function check_db(){
 }
 
 function is_user_exists($login, $password){
-    $pdo = new PDO("mysql:host=localhost;dbname=auth_hash;", 'root', NULL);
+    $pdo = new PDO("mysql:host=localhost;dbname=auth_hash;", 'root', 'root');
     $params = array(':login' => $login, ':password' => $password);
     $stmt = $pdo->prepare("SELECT * FROM users WHERE login = :login AND password = :password");
 
+
     if ($stmt->execute($params)) {
         while ($row = $stmt->fetch()) {
+          echo $row->login;
           return true;
         }
-      }
-
-    return false;
+    }
+      return false;
+    
+    
 }
