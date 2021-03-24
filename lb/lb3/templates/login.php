@@ -12,6 +12,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     echo 'password: <input type="password" name="password" /> </br>';
     echo '<input type="submit" name="pass" /> </br>';
     echo '</form>';
+    echo '<form method="get" action="templates/reg.php">';
+    echo '<input type="submit" name="pass" value="Регистрация"/> </br>';
+    echo '</form>';
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

@@ -22,7 +22,18 @@ function is_user_exists($login, $password){
           return true;
         }
     }
-      return false;
-    
-    
+      return false;   
+}
+
+function add_new_user($login,$password){
+    $pdo = new PDO("mysql:host=localhost;dbname=auth_hash;", 'root', 'root');
+    $stmt = $pdo->prepare("INSERT INTO `users`( `login`, `password`) VALUES ( :login , :password)");
+    $stmt->bindParam(':login' , $login);
+    $stmt->bindParam(':password' , $password);
+    if($stmt->execute()){
+        return true;
+    }else{
+        echo($stmt->errorCode());
+    }
+    return false;
 }
