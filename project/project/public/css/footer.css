@@ -1,0 +1,100 @@
+footer{
+    
+    padding: 0 7% 0;
+    background-color: black;
+}
+
+.foo_content{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    margin: 0;
+    color: white;
+}
+
+.foo_content_out{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.contact_info{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    width: 50%;
+    justify-content: space-between;
+}
+.info_com{
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.info_title{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.info_contacts div a{
+    color: #bcbcbc;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: 12px;
+}
+.info_contacts div a:hover{
+    color: cornflowerblue;
+}
+.info_contacts{
+
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.menu_info{
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+.menu_links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 60%;
+}
+
+.soc_net{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 35%;
+}
+.info_desiner , .info_text{
+    color: #bcbcbc;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+.menu_info div ul{
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    list-style: none;
+    justify-content:space-between;
+}
+
+.menu_info div ul li a{
+    text-decoration: none;
+    color: #bcbcbc;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+.menu_info div ul li a:hover{
+    color: cornflowerblue;
+}
