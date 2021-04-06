@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+        .content{
+            
+            margin-top: 100px;
+        }
+        header{
+            top: 0px;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: black;
+            width: 100% ;
+            height: 80px;
+            position: fixed;
+            z-index: 1000;
+        }
+        .layer{
+            display: flex;
+            margin: 20px 7% 20px;
+        }
+        .logo , .menu{
+            width: 50%;
+            display: flex;
+        }
+
+        .logo a{
+            align-self: center;
+            float: left;
+            
+        }
+
+        .logo a img{
+            align-self: center;
+            float: left;
+            
+        }
+
+        .menu ul{
+            width: 100%;
+            display: flex;
+            list-style: none;
+            text-decoration: none;
+            align-items: center;
+            justify-content: flex-end;
+            float: right;
+        }
+        .menu ul li a{
+            text-decoration: none;
+            color:black;
+            font-family: 'New Tegomin';
+            font-size: large;
+        }
+        .menu ul li a:hover{
+            color:cornflowerblue;
+        }
+        .menu ul li {
+            margin: 0px 30px  0px 0px;
+            
+        }
+
+
+        
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+        .main_content{
+            margin: 0;
+            padding: 0 7% 0;
+            background-color: white;
+        }
+        .first_content{
+            height: 400px;
+            width: 100%;
+            background-color: rgb(77, 51, 66);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            flex-direction: column;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .local_title_first{
+            font-size: 40px;
+            margin-bottom: 50px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .local_text_first{
+            text-align: center;
+            margin: 0 25%;
+            font-size: 15px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+
+
+        .second_content{
+            height: 150px;
+            width: 100%;
+            background-color: rgb(0, 247, 247);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            flex-direction: row;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .second_content_projects , .second_content_working_hours , .second_content_positive_feedbacks , .second_content_happy_clients{
+            display: flex;
+            flex-direction: row;
+            margin: 20px;
+            width: auto;
+            height: auto;
+        }
+        .projects_icon{
+            height: 40px;
+            width: 40px;
+            display: flex;
+            margin: 0 10px 0;
+        }
+
+        .project_numbers{
+            margin-top: 0;
+            margin-bottom: 3px;
+        }
+
+        .project_numbers , .project_lable{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 11px;
+            margin-top: 10px;
+        }
+
+
+
+        .third_content{
+            display: flex;
+            height: 550px;
+            width: 100%;
+        }
+
+        .third_content .left_icon img{
+            height: 550px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .left_icon{
+            width: 100%;
+            width: 50%;
+        }
+        .right_aboutme_block{
+            display: flex;
+            height: 550px;
+            width: 50%;
+        }
+        .about_me_block{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0 50px 0;
+        }
+
+        .about_me_block div{
+            margin-bottom: 30px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .about_me_title{
+            font-size: 40px;
+        }
+        .about_me_text{
+            font-size: 15px;
+        }
+
+
+        .four_content{
+            height: 400px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nead_layout{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .nead_title{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        .nead_text{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            margin: 0 20% 35px;
+            text-align: center;
+        }
+
+        .nead_button a{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            text-decoration: none;
+            color: white;
+            background-color: rgb(16, 201, 195);
+            padding: 15px 50px;
+        }
+
+
+
+
+
+
+
+
+        .foo_content{
+            display: flex;
+            height: 200px;
+            width: 100%;
+            background-color: black;
+            padding: 0 7% 0;
+            margin: 0;
+            color: white;
+        }
+
+        .foo_content_out{
+            display: flex;
+            height: 100%;
+            width: 86%;
+        }
+
+        .contact_info{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            height: 100%;
+            width: 50%;
+            justify-content: space-between;
+        }
+        .info_com{
+            
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        .info_title{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .info_contacts div a{
+            color: #bcbcbc;
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+            font-size: 12px;
+        }
+        .info_contacts div a:hover{
+            color: cornflowerblue;
+        }
+        .info_contacts{
+            
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+        }
+
+        .menu_info{
+            display: flex;
+            width: 50%;
+            height: 100%;
+        }
+
+        .menu_links{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            width: 60%;
+        }
+
+        .soc_net{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 35%;
+        }
+        .info_desiner , .info_text{
+            color: #bcbcbc;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+        }
+        .menu_info div ul{
+            display: flex;
+            flex-direction: column;
+            height: 40%;
+            list-style: none;
+            justify-content:space-between;
+        }
+        
+        .menu_info div ul li a{
+            text-decoration: none;
+            color: #bcbcbc;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+        }
+        .menu_info div ul li a:hover{
+            color: cornflowerblue;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="layer">
+            <div class="logo">
+                <a href="/"><img src="./img/logo.png" alt=""></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li> <a href="/">HOME</a> </li>
+                    <li> <a href="/about">ABOUT</a></li>
+                    <li> <a href="/contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+
+        <div class="main_content">
+            <div class="first_content">
+                <div class="local_title_first">Lorem Ipsum</div>
+                <div class="local_text_first">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae eros et urna placerat. </div>
+            </div>
+
+            <div class="second_content">
+                <div class="second_content_projects">
+                    <div class="projects_icon">
+                        <img src="/img/project.png" alt="">
+                    </div>
+                    <div >
+                        <div class="project_numbers">0</div>
+                        <div class="project_lable">PROJECT COMPLETED</div>
+                    </div>
+                </div>
+                <div class="second_content_working_hours">
+                    <div class="projects_icon">
+                        <img src="/img/hour.png" alt="">
+                    </div>
+                    <div>
+                        <div class="project_numbers">0</div>
+                    <div class="project_lable">WORKING HOURS</div>
+                    </div>
+                </div>
+                <div class="second_content_positive_feedbacks">
+                    <div class="projects_icon">
+                        <img src="/img/feed.png" alt="">
+                    </div>
+                    <div>
+                        <div class="project_numbers">0</div>
+                        <div class="project_lable">POSITIVE FEEDBACK</div>
+                    </div>
+                </div>
+                <div class="second_content_happy_clients">
+                    <div class="projects_icon">
+                        <img src="/img/like.png" alt="">
+                    </div>
+                    <div>
+                        <div class="project_numbers">0</div>
+                        <div class="project_lable">HAPPY CLIENTS</div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="third_content">
+                <div class="left_icon">
+                    <img src="./img/codecode.jpg" alt="">
+                </div>
+                <div class="right_aboutme_block">
+                    <div class="about_me_block">
+                        <div class="about_me_title">About me</div>
+                        <div class="about_me_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula purus egestas consequat semper. Vivamus porta ac ligula vel dignissim. Sed tempus nulla id fringilla vehicula. Ut ullamcorper suscipit mi, ultricies consectetur nisl tincidunt ac. Etiam eget libero purus. Nullam gravida lorem ac dictum cursus. Sed hendrerit sodales metus. Aliquam</div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="four_content">
+                <div class="nead_layout">
+                    <div class="nead_title">Nead a Project?</div>
+                    <div class="nead_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper, orci sit amet condimentum rhoncus, nibh sapien fringilla nulla, in.</div>
+                    <div class="nead_button">
+                        <a href="/">LET’S TALK</a>
+                    </div>
+                </div>
+                
+            </section>
+
+        </div>
+
+        
+        
+    </div>
+    <footer>
+        <div class="foo_content">
+            <div class="foo_content_out">
+                <div class="contact_info">
+                    <div class="info_com">
+                        <div class="info_title">Lorem Ipsum, Inc.</div>
+                        <div class="info_text">© 2021 Lorem Ipsum. All rights reserved.</div>
+                        <div class="info_desiner">Designed by Lorem Ipsum.</div>
+                    </div>
+                    <div class="info_contacts">
+                        <div class="email_contacts">
+                            <a href="mailto:vitukivan05@gmail.com">loremIpsum@gmail.com</a>
+                        </div>
+                        <div class="phone_contacts">
+                            <a href="tel:+380965244909">loremIpsum</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_info">
+                    <div class="menu_links">
+                        <ul>
+                            <li><a href="/">Projects</a></li>
+                            <li><a href="/">About</a></li>
+                            <li><a href="/">Services</a></li>
+                            <li><a href="/">Carrer</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="/">News</a></li>
+                            <li><a href="/">Events</a></li>
+                            <li><a href="/">Contacts</a></li>
+                            <li><a href="/">Legals</a></li>
+                        </ul>
+                    </div>
+                    <div class="soc_net">
+                        <ul>
+                            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                            <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                            <li><a href="https://www.tiktok.com/" target="_blank">TikTok</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

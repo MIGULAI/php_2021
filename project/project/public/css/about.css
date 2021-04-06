@@ -137,3 +137,7 @@
     background-color: rgb(16, 201, 195);
     padding: 15px 50px;
 }
+.nead_button a:hover{
+    background-color: rgb(71, 148, 145);
+    color: rgb(16, 201, 195);
+}
