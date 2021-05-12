@@ -22,21 +22,17 @@
                 <div class="menu_info">
                     <div class="menu_links">
                         <ul>
-                            <li><a href="/">Projects</a></li>
                             <li><a href="/about">About</a></li>
-                            <li><a href="/">Services</a></li>
-                            <li><a href="/">Carrer</a></li>
+                            <li><a href="/create_order">Create order</a></li>
                         </ul>
                         <ul>
-                            <li><a href="/">News</a></li>
-                            <li><a href="/">Events</a></li>
                             <li><a href="/">Contacts</a></li>
                             <li><a href="/">Legals</a></li>
                         </ul>
                         @guest
                         <ul>
                         @if (Route::has('login'))
-                    
+
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                         </li>
@@ -46,7 +42,7 @@
                                 <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                             </li>
                         @endif
-                        
+
                         @endguest
                     </div>
                     <div class="soc_net">

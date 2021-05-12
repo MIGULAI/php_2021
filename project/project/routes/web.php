@@ -21,10 +21,13 @@ Route::get('/about', function () {
     return view('about');
 });
 
+Route::get('/create_order',[\App\Http\Controllers\CreateOrderController::class , 'index']);
+
+
+Route::post('/create_order/post', [\App\Http\Controllers\CreateOrderController::class , 'make_date']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
 
 
 Route::middleware(['role:admin'])->prefix('admin_panel')->group( function () {

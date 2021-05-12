@@ -18,7 +18,9 @@
     </section>
     <section class=tagline>
         <div class="sub_tagline">
-            <div class="self_tagline">aaaaaaaaaa</div>
+            <div class="self_tagline">
+                <a href="/create_order">Create Order</a>
+            </div>
         </div>
     </section>
 @endsection

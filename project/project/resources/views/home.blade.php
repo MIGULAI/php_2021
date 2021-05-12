@@ -1,6 +1,14 @@
-@extends('layouts.app')
+@extends('header')
 
-@section('content')
+@section('title')
+    Successed
+@endsection
+
+@section('head_add')
+    <link rel="stylesheet" href="{{asset("css/login.css")}}">
+@endsection
+
+@section('main_content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -21,3 +29,5 @@
     </div>
 </div>
 @endsection
+
+@extends('footer')

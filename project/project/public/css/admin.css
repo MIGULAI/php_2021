@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flexbox;
+    flex-direction: column;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: calc(97.6vh - 80px - 200px);
+}
+
+.smbox{
+    height: 100%;
+    padding: 5px;
+    border-radius: 10px;
+}
